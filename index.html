@@ -6,6 +6,11 @@
     <title>Hikaproj Web Desktop OS (Hikaproj Desktop)</title>
 </head>
 <body>
-    <button>OSを起動</button>
+    <button onclick="bootOS(`boot/`);">OSを起動</button>
+    <script>
+        function bootOS(url) {
+            window.location.href = `${url}`;
+        }
+    </script>
 </body>
 </html>
