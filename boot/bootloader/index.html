@@ -4,10 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>bootloader</title>
+    <link rel="stylesheet" href="bootscreen.style.css">
 </head>
 <body>
+    <div id="bootscreen">
+        <div>
+            <img src="logo.png" alt="Hikaproj Logo" id="logo" width="200" height="200">
+            <!-- ローディングアニメーション -->
+            <div class="circle-loader">
+                <div class="circle-dot"></div>
+                <div class="circle-dot"></div>
+                <div class="circle-dot"></div>
+                <div class="circle-dot"></div>
+                <div class="circle-dot"></div>
+                <div class="circle-dot"></div>
+            </div>
+        </div>
+    </div>
     <script>
         history.pushState(null, null, '../redirect.index.html');
+        document.title = "Hikaproj Web Desktop OS (Hikaproj Desktop)";
     </script>
+    <script src="bootscreen.script.js"></script>
 </body>
 </html>
