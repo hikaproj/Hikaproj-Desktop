@@ -24,6 +24,9 @@
     <script>
         history.pushState(null, null, '../redirect.index.html');
         document.title = "Hikaproj Web Desktop OS (Hikaproj Desktop)";
+        setTimeout(() => {
+            location.href = 'bootloader/boot.html';
+        }, 2000);
     </script>
     <script src="bootscreen.script.js"></script>
 </body>
